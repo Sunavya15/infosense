@@ -1,7 +1,7 @@
 {
   "name": "infosense-consulting",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "server.js",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
