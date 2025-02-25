@@ -1,0 +1,766 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px; /* Adjust according to header height */
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 70px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333; /* or whatever your header background is */
+    padding: 20px; /* adjust as necessary */
+}
+
+
+header h1 {
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+
+/* Logo Styling */
+.logo {
+    height: 60px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-right: auto;
+}
+
+/* Flexbox for header layout */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px; /* Adjust padding for spacing */
+}
+
+/* Ensure the logo is properly spaced */
+header .container a {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        height: 50px; /* Smaller logo for mobile */
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;  /* Ensures the items are in a row */
+        flex-direction: row; /* Align items horizontally */
+        justify-content: center; /* Centers items */
+        gap: 15px; /* Spacing between items */
+        padding: 10px 0;
+        list-style: none; /* Remove bullet points */
+    }
+
+    nav ul li {
+        margin: -5px;
+        display: inline-block; /* Ensures they stay in a row */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+
+
+/* Hero Section with Background Image */
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+    height: 85vh; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(117, 98, 98);
+    padding: 10px;
+    position: relative;
+    transition: background-image 2s ease-in-out; /* Smooth transition effect */
+}
+
+
+/* Optional: Add an overlay to improve text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 12, 12, 0.5); 
+}
+
+/* Ensure text and button are on top of the overlay */
+.hero h1, .hero p, .hero .cta-button {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Style the CTA Button */
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #a5c8a5;
+    color: rgb(255, 255, 255);
+    padding: 50px 20px;
+}
+
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    color: #000000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 15px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+/* Services Section */
+.services {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services .service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.services .service-item p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 768px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .services .service-item {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Centered Button in Services Section */
+/* Centered Button in Services Section */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    grid-column: 1 / -1;  /* This ensures it spans across all grid columns */
+}
+
+/* Contact CTA Section */
+.contact-cta {
+    background-color: #fbfdfb;
+    color: rgb(15, 1, 1);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* **************************************** */
+/* contact page */
+
+/* Contact Section */
+
+.cont {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1200px; /* Prevents content from being too wide */
+    margin: 0 auto; /* Centers the container */
+    text-align: center; /* Ensures text alignment */
+}
+
+.contact {
+    padding: 60px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+/* Contact Heading */
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contact Info Layout */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between boxes */
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px; /* Prevents boxes from shrinking too much */
+    max-width: 300px; /* Limits width for better readability */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form Layout */
+.contact-form {
+    max-width: 600px; /* Limits form width */
+    margin: 30px auto; /* Centers the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+    .contact-details {
+        grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-details {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+
+/* ***************************************** */
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+/* Footer - Scrolls Normally */
+/* footer {
+    background-color: #333; 
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+} */
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ******************************************************** */
+
+/* General styles for the services section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.service-card {
+    width: 350px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for service cards */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Service card icon */
+.service-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Service card heading */
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Service card description */
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button style for Learn More */
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    color: rgb(80, 80, 212);
+    font-weight: bold;
+    text-decoration: line;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.learn-more-btn:hover {
+    background-color: none;
+}
+.services-intro {
+    background-color: rgb(232, 230, 230);
+    color: black;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.services-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.service {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.service ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.service ul li strong {
+    color: #333;
+}
+
+.service h4 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.service ul li {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service h2 {
+        font-size: 2.2rem;
+    }
+
+    .service h3 {
+        font-size: 1.7rem;
+    }
+
+    .service p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Modal Background */
+/* Modal structure */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* On top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    margin-top: 70px;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust as needed */
+    max-height: 80vh; /* Max height to prevent overflow */
+    overflow-y: auto; /* Enable scrolling if content exceeds max height */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* src/App.css */
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+   

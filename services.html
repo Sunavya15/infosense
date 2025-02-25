@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Infosense Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo2.jpg" alt="Infosense Consulting Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services-intro">
+        <h1>Our Services</h1>
+        <p>At <strong>Infosense Consulting</strong>, we provide tailored IT services to meet your business needs, from staffing and development to training and technical support. Our solutions are designed to offer flexibility, quality, and efficiency, ensuring that your business stays ahead in a competitive market.</p>
+    </section>
+
+    <section class="services">
+        <!-- Service 1: Staff Augmentation -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon1.png" alt="Staff Augmentation Icon">
+            </div> -->
+            <br>
+            <h2>Flexible Staffing Solutions</h2>
+            <p>Quickly Scale Your Workforce with Qualified Experts</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal1')">Learn More</a>
+        </div>
+
+        <!-- Service 2: Software Development -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon2.png" alt="Software Development Icon">
+            </div> -->
+            <br>
+            <h2>Software Development</h2>
+            <p>Customize Your Solutions for Long-Term Success</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal2')">Learn More</a>
+        </div>
+
+        <!-- Service 3: IT Staffing -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon3.png" alt="IT Staffing Icon">
+            </div> -->
+            <br>
+            <h2>IT Staffing</h2>
+            <p>Access Highly Skilled IT Talent for Your Projects</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal3')">Learn More</a>
+        </div>
+
+        <!-- Service 4: IT Training and Development -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon4.png" alt="IT Training Icon">
+            </div> -->
+            <br>
+            <h2>IT Training and Development</h2>
+            <p>Empower Your Workforce with Industry-Leading Training</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal4')">Learn More</a>
+        </div>
+
+        <!-- Service 5: Professional Resume and Cover Letter Writing -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon5.png" alt="Resume Writing Icon">
+            </div> -->
+            <br>
+            <h2>Professional Resume and Cover Letter Writing</h2>
+            <p>Your resume is your first impression to employers. Let us help you make it count.</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal5')">Learn More</a>
+        </div>
+
+        <!-- Service 6: Lifetime Service Guarantee -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon6.png" alt="Lifetime Guarantee Icon">
+            </div> -->
+            <br>
+            <h2>Ongoing Career Support & Lifetime Assurance</h2>
+            <p>Receive continuous support for your career growth with expert advisory and a lifetime service guarantee.</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal6')">Learn More</a>
+        </div>
+
+        <!-- Service 8: Resume Optimization -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon8.png" alt="Resume Optimization Icon">
+            </div> -->
+            <br>
+            <h2>Resume Optimization & Marketing & Interview Scheduling</h2>
+            <p>Optimize your resume and market it effectively to boost job opportunities and get interview-ready..</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal8')">Learn More</a>
+        </div>
+
+        <!-- Service 10: Technical Training & Guidance -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon10.png" alt="Technical Training Icon">
+            </div> -->
+            <br>
+            <h2>Technical Training & Guidance</h2>
+            <p>Prepare your team for success with top-notch training.</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal10')">Learn More</a>
+        </div>
+
+        <!-- Service 11: Compliance, Onboarding, and Background Checks -->
+        <div class="service-card">
+            <!-- <div class="service-icon">
+                <img src="path/to/icon11.png" alt="Compliance Icon">
+            </div> -->
+            <br>
+            <h2>Seamless Onboarding & Compliance Solutions</h2>
+            <p>Ensure a smooth onboarding experience with thorough compliance checks.</p>
+            <a href="javascript:void(0)" class="learn-more-btn" onclick="openModal('modal11')">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Modals for Services -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Flexible Staffing Solutions</h2>
+        <p>Staff augmentation allows you to quickly expand your team with specialized external talent to meet project needs, without long-term commitments. It provides flexibility to scale up or down based on demand, ensuring you have the right skills when needed.</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>Access to specialized skills</li>
+            <li>Scalable and flexible staffing</li>
+            <li>Cost-effective solution</li>
+            <li>Faster project timelines</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Software Development</h2>
+        <p>Our software development services help you design and build custom solutions that address your unique business challenges. From web applications to enterprise systems, we ensure that every solution is scalable, secure, and aligned with your long-term objectives.</p>
+        <p><strong>Key Services Include:</strong></p>
+        <ul>
+            <li>Custom software design and development</li>
+            <li>Web and mobile applications</li>
+            <li>System architecture and integration</li>
+            <li>Ongoing maintenance and support</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>IT Staffing</h2>
+        <p>Our IT staffing services connect you with skilled professionals tailored to your project requirements. Whether you need short-term support or long-term talent, we provide top-tier IT specialists who can seamlessly integrate into your team.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Access to highly skilled IT professionals</li>
+            <li>Flexible staffing options for your projects</li>
+            <li>Seamless integration into your existing team</li>
+            <li>Speedy deployment to meet project deadlines</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>IT Training and Development</h2>
+        <p>We provide comprehensive IT training programs designed to enhance the skills of your workforce. Our training sessions cover a wide range of technologies and methodologies, ensuring your team stays up-to-date with industry standards.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Customized training programs to suit your business needs</li>
+            <li>Hands-on learning with industry experts</li>
+            <li>Comprehensive courses in the latest technologies</li>
+            <li>Boost team productivity and technical expertise</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Professional Resume and Cover Letter Writing</h2>
+        <p>Your resume and cover letter are your first impression to potential employers. Our professional writing services help you craft tailored documents that highlight your strengths and achievements, ensuring you stand out in the competitive job market.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Expertly written resumes and cover letters customized to your career goals</li>
+            <li>Optimized content to pass Applicant Tracking Systems (ATS)</li>
+            <li>Highlight key skills and achievements to catch recruiters' attention</li>
+            <li>Professional formatting and design for maximum impact</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Ongoing Career Support & Lifetime Assurance</h2>
+        <p>We provide continuous career support and guidance, even after you secure your job. Our lifetime service guarantee ensures that you always have access to career advice, skill development, and industry insights, empowering you for long-term success.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Ongoing career coaching and mentorship</li>
+            <li>Access to skill development resources</li>
+            <li>Guidance for career progression and job market trends</li>
+            <li>Long-term support for professional growth</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2>Resume Optimization & Marketing & Interview Scheduling</h2>
+        <p>Maximize your job search success with our comprehensive resume optimization and marketing services. We ensure your resume is perfectly tailored to stand out, while helping you market it to the right opportunities and schedule interviews with top employers.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Optimized resume content to match job descriptions and industry standards</li>
+            <li>Incorporating keywords for better visibility with recruiters and Applicant Tracking Systems (ATS)</li>
+            <li>Targeted resume marketing to potential employers and job platforms</li>
+            <li>Assistance in scheduling interviews and securing the best job opportunities</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <h2>Technical Training & Guidance</h2>
+        <p>We offer expert-led technical training and guidance to help your team stay at the forefront of technological advancements. Our programs are designed to enhance your team's skills, ensuring they are equipped to tackle complex challenges and succeed in a competitive environment.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Expert-led training in the latest technologies</li>
+            <li>Customized sessions based on your team's needs</li>
+            <li>Hands-on practical exercises to reinforce learning</li>
+            <li>Improved problem-solving and technical capabilities</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <h2>Seamless Onboarding & Compliance Solutions</h2>
+        <p>We streamline your onboarding process, ensuring compliance and thorough background checks for a smooth hiring experience. Our solutions help you avoid legal risks and ensure that your new hires meet all necessary standards and requirements.</p>
+        <p><strong>Key Benefits Include:</strong></p>
+        <ul>
+            <li>Efficient and compliant onboarding process</li>
+            <li>Comprehensive background checks for a secure hire</li>
+            <li>Reduce legal and compliance risks</li>
+            <li>Streamline employee integration into your company</li>
+        </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Infosense Consulting</p>
+        <p>Phone: <a href="tel:+13109382953">310-938-2953</a></p>
+        <p>Email: <a href="mailto:infosenseconsulting@gmail.com">prmla2000@aol.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

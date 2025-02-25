@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infosense Consulting">
+    <title>Infosense Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="root"></div> 
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo2.jpg" alt="Infosense Consulting Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = [
+                "images/hero2.jpg",  // Second image
+                "images/hero.jpg"   // Third image
+            ];
+    
+            let currentIndex = 0;
+            const heroSection = document.querySelector(".hero");
+    
+            function changeBackground() {
+                currentIndex = (currentIndex + 1) % images.length;
+                heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+            }
+    
+            // Change background every 3 seconds
+            setInterval(changeBackground, 3000);
+        });
+    </script>
+
+    <!-- Main Content (Non-Scrollable) -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Helping Your Business Grow with Expert IT Solutions</h1>
+            <p>At Infosense Consulting, we provide tailored IT consulting, database services, software development, and more to help businesses thrive in today's digital world.</p>
+            <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h1>About Infosense Consulting</h1>
+            <p>Infosense Consulting is a trusted partner for businesses looking to leverage technology for growth. With expertise in IT consulting, database management, software development, and web solutions, we help businesses of all sizes streamline operations, improve efficiency, and reach their goals. We are committed to providing custom solutions that align with each client's unique needs and vision.</p>
+            <br>
+            <a href="about.html" class="cta-button">Learn More About Us</a>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="service-item">
+                <h4>IT Consulting</h4>
+                <p>Optimize your technology infrastructure and operations with expert insights to drive innovation and efficiency.</p>
+            </div>
+            <div class="service-item">
+                <h4>Database Services</h4>
+                <p>Seamless data storage, retrieval, and security solutions tailored to your business needs.</p>
+            </div>
+            <div class="service-item">
+                <h4>Software Development</h4>
+                <p>Custom software solutions designed to automate processes and improve performance.</p>
+            </div>
+            <div class="service-item">
+                <h4>Offshore Development</h4>
+                <p>Cost-effective, high-quality solutions from our global offshore development team.</p>
+            </div>
+            <div class="service-item">
+                <h4>Website Development & Maintenance</h4>
+                <p>Responsive, user-friendly websites with ongoing maintenance to ensure top performance.</p>
+            </div>
+            <div class="service-item">
+                <h4>SEO/SEM & Web Marketing</h4>
+                <p>Boost your online visibility with targeted SEO and SEM strategies to reach the right audience.</p>
+            </div>
+            <div class="cta-container">
+                <a href="services.html" class="cta-button">Explore More Services</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scrollable Section (Contact + Footer) -->
+    <div class="scrollable-section">
+        <!-- Contact CTA Section -->
+        <section class="contact-cta">
+            <h3>Let's Work Together!</h3>
+            <p>Ready to elevate your business with expert IT consulting and services? Get in touch with us today to discuss how we can help you achieve your business goals.</p>
+            <a href="contact.html" class="cta-button">Contact Us Today</a>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Infosense Consulting</p>
+            <p>Phone: <a href="tel:+13109382953">310-938-2953</a></p>
+            <p>Email: <a href="mailto:infosenseconsulting@gmail.com">infosenseconsulting@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
